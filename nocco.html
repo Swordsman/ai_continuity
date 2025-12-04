@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NOCCO Protocol - Nuclear-Option Conversation Carryover methodology for AI assistants">
+    <title>NOCCO Protocol Specification</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        h3 { color: #555; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        .example { background: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; margin: 20px 0; }
+        .warning { background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 20px 0; }
+        ul, ol { margin-left: 20px; }
+    </style>
+</head>
+<body>
+
+<h1>NOCCO Protocol</h1>
+<p><strong>Nuclear-Option Conversation Carryover</strong></p>
+<p><em>Version 1.0 | December 2025</em></p>
+
+<h2>What is NOCCO?</h2>
+<p><strong>NOCCO</strong> is a "resurrection directive" - an instruction to create a document that captures a conversation's semantic meaning and progress so thoroughly that a different human with a different AI could continue the work with zero wasted effort.</p>
+
+<p><strong>Core principle:</strong> Preserve semantic meaning, not transcripts. Enable complete project resurrection even if original participants and context cease to exist.</p>
+
+<h2>When to Use NOCCO</h2>
+<ul>
+    <li>Conversation approaching token limit (70-80%)</li>
+    <li>Major milestone completed</li>
+    <li>Before extended break from work</li>
+    <li>Need to switch between AI assistants</li>
+    <li>Context becoming complex or tangled</li>
+</ul>
+
+<h2>What to Include in a NOCCO</h2>
+<p><strong>Essential elements:</strong></p>
+<ol>
+    <li><strong>Context:</strong> Why this conversation exists, background information</li>
+    <li><strong>Decisions Made:</strong> What was decided and why (including alternatives considered)</li>
+    <li><strong>Work Completed:</strong> What's been done so far</li>
+    <li><strong>Current State:</strong> Where things stand right now (files, dependencies, status)</li>
+    <li><strong>Next Steps:</strong> What needs to happen next (immediate, short-term, long-term)</li>
+    <li><strong>Technical Details:</strong> Specifications, code snippets, configurations</li>
+    <li><strong>References:</strong> Links, documentation, key resources</li>
+</ol>
+
+<p><strong>Not needed:</strong> Complete transcripts, tangential discussions (unless they led to decisions), temporary debugging details</p>
+
+<h2>NOCCO Structure</h2>
+<p>No mandatory structure - use what serves resurrection. Common approach:</p>
+
+<pre>
+# NOCCO_##_[PROJECT]_##.md
+
+## Executive Summary
+[2-3 paragraph overview of current state]
+
+## Context / Background
+[Why this exists, what problem it solves]
+
+## Work Completed
+[What's been done since last NOCCO or from start]
+
+## Current State
+[Detailed snapshot: files, dependencies, what works/doesn't]
+
+## Next Steps
+[Immediate actions, short-term goals, long-term plan]
+
+## Technical Details
+[Specifications, decisions, configurations]
+
+## Reference Material
+[Key docs, links, quick reference tables]
+
+## Meta Information
+[Token count, how to continue, file locations]
+</pre>
+
+<h2>Naming Convention</h2>
+<p><strong>Format:</strong> <code>NOCCO_##_[NAME]_##.md</code></p>
+<p><strong>Example:</strong> <code>NOCCO_01_DASHBOARD_01.md</code></p>
+
+<p><strong>Why duplicate numbers?</strong> Both prefix and suffix ensure parent NOCCOs and corrections stay adjacent in any file sorting system.</p>
+
+<div class="example">
+<strong>Corrections:</strong>
+<ul>
+    <li>Original: <code>NOCCO_05_PROJECT_05.md</code></li>
+    <li>Correction: <code>NOCCO_05_PROJECT_06.md</code></li>
+</ul>
+<p>Keep first number (chain position), increment second (correction version).</p>
+</div>
+
+<h2>Creating a NOCCO</h2>
+<p><strong>How to request:</strong></p>
+<blockquote>
+"Create a NOCCO for this [project/conversation]. Include everything needed for someone else to continue with zero wasted effort."
+</blockquote>
+
+<p><strong>AI should:</strong></p>
+<ul>
+    <li>Identify essential information for resurrection</li>
+    <li>Organize logically with clear sections</li>
+    <li>Be specific (file paths, versions, dates, exact decisions)</li>
+    <li>Verify: Would this alone be sufficient to continue?</li>
+    <li>Keep focused (semantic record, not transcript)</li>
+</ul>
+
+<h2>Using a NOCCO to Continue</h2>
+<p><strong>Starting new conversation:</strong></p>
+<ol>
+    <li>Upload the NOCCO file</li>
+    <li>Say: "Let's continue from this NOCCO"</li>
+    <li>AI reads and confirms understanding</li>
+    <li>Work continues from where it left off</li>
+</ol>
+
+<p><strong>AI should:</strong></p>
+<ul>
+    <li>Read executive summary first</li>
+    <li>Check for any errata/corrections</li>
+    <li>Understand next steps clearly</li>
+    <li>Reference other sections as needed during work</li>
+    <li>Don't try to memorize everything - reference as needed</li>
+</ul>
+
+<h2>Key Principles</h2>
+
+<h3>Philosophical Immutability</h3>
+<p>NOCCOs are philosophically immutable - conversations don't change after they happen, so their records shouldn't either. However, they can be:</p>
+<ul>
+    <li>Synthesized into larger documents</li>
+    <li>Combined and analyzed</li>
+    <li>Referenced and built upon</li>
+    <li>Edited for typos/minor fixes (substantive changes = create correction)</li>
+</ul>
+
+<h3>Corrections Travel Adjacent</h3>
+<p>Filename convention ensures corrections stay with originals. Even if some NOCCOs in a chain are lost, corrections for surviving ones remain intact.</p>
+
+<h3>Multi-AI Compatible</h3>
+<p>NOCCOs work with any AI: Claude, GPT, Gemini, DeepSeek, Perplexity, etc. Switch AIs by creating NOCCO at end of one conversation, uploading to next.</p>
+
+<h3>Not Just Projects</h3>
+<p>NOCCO works for conversations, research, discussions, creative work - anything where continuity matters.</p>
+
+<h2>Chains and Trees</h2>
+
+<p><strong>Linear chain (most common):</strong></p>
+<pre>NOCCO_01 → NOCCO_02 → NOCCO_03 → NOCCO_04</pre>
+
+<p><strong>Branching (exploring alternatives):</strong></p>
+<pre>
+NOCCO_01 → NOCCO_02 → NOCCO_03_optionA
+                    → NOCCO_03_optionB
+</pre>
+
+<p><strong>Merging (synthesis):</strong></p>
+<pre>
+NOCCO_03_optionA ↘
+                  → NOCCO_04 (combines insights)
+NOCCO_03_optionB ↗
+</pre>
+
+<h2>Best Practices</h2>
+
+<div class="example">
+<strong>Do:</strong>
+<ul>
+    <li>✓ Be specific (file paths, versions, dates, exact decisions)</li>
+    <li>✓ Focus on semantic meaning, not transcripts</li>
+    <li>✓ Include everything needed for resurrection</li>
+    <li>✓ Create proactively (don't wait for token limit)</li>
+    <li>✓ Test: Could someone else continue from this alone?</li>
+</ul>
+</div>
+
+<div class="warning">
+<strong>Don't:</strong>
+<ul>
+    <li>✗ Be vague ("we decided on the approach" - which approach?)</li>
+    <li>✗ Assume context ("obviously using Python" - state it explicitly)</li>
+    <li>✗ Wait until 95% token limit</li>
+    <li>✗ Include full transcripts or unedited discussions</li>
+    <li>✗ Edit published NOCCOs for substantive changes (create correction instead)</li>
+</ul>
+</div>
+
+<h2>Example Minimal NOCCO</h2>
+
+<pre>
+# NOCCO_01_WEATHERAPP_01.md
+
+## Context
+Building weather dashboard aggregating 3 APIs. Started Dec 4, 2025.
+
+## Decisions
+- React + Node.js + PostgreSQL
+- OpenWeather, WeatherAPI, Weatherstack APIs
+- Recharts for visualization
+- Redis caching (15min TTL)
+
+## Work Completed
+- API clients written (src/api/)
+- Database schema implemented
+- Basic UI components (Header, ForecastCard, SearchBar)
+
+## Current State
+- 8 files created, all in Git
+- APIs tested, rate limiting works
+- Ready for chart integration
+
+## Next Steps
+1. Integrate Recharts for forecast display
+2. Add error handling UI
+3. Deploy to Vercel
+
+## Files
+src/api/openweather.js, weatherapi.js, weatherstack.js
+src/components/Header.jsx, ForecastCard.jsx, SearchBar.jsx
+migrations/001_initial_schema.sql
+</pre>
+
+<h2>Typical Length</h2>
+<ul>
+    <li><strong>Minimal:</strong> 1-3k tokens (simple conversations)</li>
+    <li><strong>Standard:</strong> 5-15k tokens (typical projects)</li>
+    <li><strong>Comprehensive:</strong> 20-40k tokens (complex multi-phase work)</li>
+</ul>
+<p>Aim for "sufficient for resurrection" not "maximum detail possible".</p>
+
+<h2>The Resurrection Test</h2>
+<p>A NOCCO passes if, given only the NOCCO file, a competent person with an AI assistant could:</p>
+<ul>
+    <li>Understand what was being done</li>
+    <li>Understand why decisions were made</li>
+    <li>See the current state clearly</li>
+    <li>Continue the work seamlessly</li>
+    <li>Not redo anything already done</li>
+</ul>
+
+<h2>Quick Start</h2>
+<ol>
+    <li>Work with AI on project</li>
+    <li>When approaching natural breakpoint: "Create a NOCCO"</li>
+    <li>AI generates comprehensive snapshot</li>
+    <li>Download and save the NOCCO</li>
+    <li>When continuing (new conversation): Upload NOCCO, say "Continue from this"</li>
+    <li>AI reads and continues seamlessly</li>
+</ol>
+
+<hr>
+
+<p><em>This is NOCCO v1.0 (December 2025). For detailed specification, see NOCCO_SPECIFICATION.md</em></p>
+
+<p><strong>Web URL:</strong> This page is designed to be fetched by AI assistants. Reference it in custom instructions or conversations.</p>
+
+</body>
+</html>

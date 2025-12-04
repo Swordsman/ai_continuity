@@ -1,0 +1,1 @@
+NOCCO: When I say "create a NOCCO" or "use NOCCO", fetch the spec from https://[YOUR-URL]/nocco and apply it. NOCCO = comprehensive conversation snapshot enabling different human+AI to continue work with zero wasted effort. Include: context, decisions, current state, next steps. Format: NOCCO_##_[NAME]_##.md
